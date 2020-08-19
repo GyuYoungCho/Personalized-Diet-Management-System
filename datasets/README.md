@@ -1,10 +1,7 @@
-# food_image
+# 0~40번 음식
 
-- 음식 사진 모음
-
-# label
-
-- label 번호와 bounding box 정보가 들어간 txt파일 모음
+- 음식 사진 데이터
+- 라벨 데이터
 
 # train.txt, valid.txt
 
