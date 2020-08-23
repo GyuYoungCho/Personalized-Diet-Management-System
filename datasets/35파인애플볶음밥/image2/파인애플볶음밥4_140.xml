@@ -1,0 +1,26 @@
+<annotation>
+	<folder>파인애플볶음밥</folder>
+	<filename>파인애플볶음밥4_140.jpg</filename>
+	<path>C:\Users\upupl\img\파인애플볶음밥\파인애플볶음밥4_140.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>612</width>
+		<height>409</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>파인애플볶음밥ㅈㅇㅇ</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>64</xmin>
+			<ymin>29</ymin>
+			<xmax>563</xmax>
+			<ymax>409</ymax>
+		</bndbox>
+	</object>
+</annotation>
