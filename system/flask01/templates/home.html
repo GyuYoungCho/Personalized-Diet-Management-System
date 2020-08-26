@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    <body style="text-align: center;">
+    <h3>8VET Home</h3>
+    <hr width="100%" color="black"/>
+    <h2>
+        <table class="table table-borderless" style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td>
+                    <img src="{{ url_for('static',filename='images/vet1.png') }}",
+                         width="50")/>
+                <td><a href="./upload">아침</a></td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="{{ url_for('static',filename='images/vet2.png') }}", width="50")/>
+                <td><a href="./upload">점심</a></td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="{{ url_for('static',filename='images/vet3.png') }}", width="50")/>
+                <td><a href="./upload">저녁</a></td>
+                </td>
+            </tr>
+        </table>
+    </h2>
+    <center>
+        <h4>
+            <p>
+            <td><a href="./downfile">파일 다운로드</a></td>
+            </p>
+
+        </h4>
+    </center>
+    </table>
+    </body>
+{% endblock %}

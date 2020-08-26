@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+	{% extends "base.html" %}
+	{% block content %}
+	{% if session['logged_in'] %}
+		<p>또 가입하시게요?</p>
+	{% else %}
+	<center><div>
+		<h2>Register</h2>
+		<form action="/register/" method="POST">
+		  <input type="username" name="username" placeholder="이름을 입력해주세요"><br>
+		  <input type="password" name="password" placeholder="비밀번호를 입력해주세요"><br>
+		  <input type="email" name="email" placeholder="email@naver.com"><br>
+		  <input type="age" name="age" placeholder="나이를 입력해주세요"><br>
+		  <input type="sex" name="sex" placeholder="성별을 입력해주세요"><br>
+		  <input type="act" name="act" placeholder="활동량을 입력해주세요">
+            <br><br>
+		  <input type="submit" value="회원가입">
+		</form>
+	</div></center>
+	{% endif %}
+	{% endblock %}
+</html>
