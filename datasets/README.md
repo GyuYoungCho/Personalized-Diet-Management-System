@@ -1,12 +1,12 @@
-# 0~40번 음식
+# 0~38번 음식
 
 - 음식 사진 데이터
 - 라벨 데이터
 
-# train.txt, valid.txt
+# data augmentation(+labeling)
 
-- 이미지 경로 저장
-- train, valid set으로 나눔
+- 좌우 반전, random noise
+- 좌표 계산으로 label data 산출
 
 # 통합 식품영양성분DB_20200727.csv
 
