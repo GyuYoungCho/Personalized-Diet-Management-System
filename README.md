@@ -49,7 +49,7 @@
 3. data 폴더 안에 custom 폴더를 만들고 그 안에 labels와 images폴더를 생성한다.
 4. data를 8:2 비율로 나누고 data/custom/images/이미지 이름 형식으로 train.txt와 valid.txt를 작성하고 custom 폴더 안에 넣는다.
 5. custom 폴더 안에 image의 class들을 index에 맞춰 작성하여 classes.names를 생성하고, class 개수와 train.txt와 valid.txt의 경로를 적은 custom.data파일을 생성한다.
-6. images안에 수집한 이미지 데이터를 넣어준다. 
+6. images안에 수집한 이미지 데이터를 넣어준다.
 7. !wget https://pjreddie.com/media/files/darknet53.conv.74 weights 폴더 안에 다운 받고 처음 학습은 darknet53.conv.74로 시작
 8. 이후 epoch 돌면서 .pt파일 저장되면 last.pt로 이어서 학습시키기
 
