@@ -30,7 +30,11 @@
 
 4. 표현: Flask를 통해 사용자가 웹 어플리케이션으로 시스템을 사용할 수 있도록 함
 
+- 음식 사진 업로드 페이지
+
 <img width="700" alt="플라스크_2" src="https://user-images.githubusercontent.com/49351511/91731991-758e4c80-eb5c-11ea-8499-8f8e2a822bdd.png">
+
+- 음식 추천 페이지
 
 <img width="700" alt="플라스크_1" src="https://user-images.githubusercontent.com/49351511/91731825-39f38280-eb5c-11ea-9eb8-abd05c022e15.png">
 
@@ -48,3 +52,5 @@
 6. images안에 수집한 이미지 데이터를 넣어준다. 
 7. !wget https://pjreddie.com/media/files/darknet53.conv.74 weights 폴더 안에 다운 받고 처음 학습은 darknet53.conv.74로 시작
 8. 이후 epoch 돌면서 .pt파일 저장되면 last.pt로 이어서 학습시키기
+
+[출처] https://github.com/ultralytics/yolov3/wiki/Train-Custom-Data
