@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<body style="text-align: center;">
+  <h3>결과</h3>
+  <hr width="100%" color="black"/>
+{#    <h4> 음식 리스트 </h4>#}
+{#    {{ one_i }}#}
+{#  {{ two_i }}#}
+{#  {{ three_i }}#}
+{#  {{ four_i }}#}
+{#  {{ five_i }}#}
+{#   <img src="{{ url_for('static',filename='images/tick.png') }}", width="100")/>#}
+    <img src= "{{ sy1 }}", width="100")/>
+  <img src= "{{ sy2 }}", width="100")/>
+  <img src= "{{ sy3 }}", width="100")/>
+  <img src= "{{ sy4 }}", width="100")/>
+  <img src= "{{ sy5 }}", width="100")/>
+{#    <img src = "../static/images/food/감자볶음.jpg"/>#}
+
+
+    {% for n in files %}
+        <p class="list-group-item">{{n}}</p>
+    {% endfor %}
+</body>
+{% endblock %}

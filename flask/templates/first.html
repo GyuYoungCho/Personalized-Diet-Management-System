@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Main Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
+</head>
+<style>
+    @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+    [class*="fontawesome-"]:before {
+        font-family: 'FontAwesome', sans-serif;
+    }
+
+    .form_input {
+        text-align: center;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        color: white;
+        font: 400 0.875rem/1.5 "Open Sans", sans-serif;
+        margin: 0;
+        min-height: 100%;
+        font-size: 30pt;
+
+
+    }
+    .ppp {
+
+        padding-top: 10px;
+        margin-bottom: 10px;
+        color: Green;
+        font: 400 0.875rem/1.5 "Open Sans", sans-serif;
+        margin: 0;
+        min-height: 100%;
+        font-size: 50pt;
+        font-weight: bold;
+
+
+    }
+
+
+</style>
+<body class="is-preload">
+
+<!-- Sidebar -->
+<section id="sidebar">
+    <div class="inner">
+        <nav>
+            <ul>
+                <li><a href="#intro">HOME WELCOME</a></li>
+                <li><a href="#one">Upload Food</a></li>
+                <li><a href="#two">Recommend Food</a></li>
+                <li><a href="#three">Get in touch</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Intro -->
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+            <div class="form_input"><h3>{{ user_naming }}님 식단을 등록하셨군요!</h3></div>
+            <h1>건강한 식생활을 위한 영양 분석 시스템</h1>
+            <p>아래 페이지에서 메뉴 추천을 확인하세요.</p>
+            <ul class="actions">
+                <li><a href="#two" class="button scrolly">메뉴 추천 바로가기</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style2 spotlights">
+        <section>
+
+            <a class="image">
+                <img src="{{ url_for('static',filename='images/4.jpg') }}", width="340" height="390" )/>
+
+            </a>
+
+            <div class="content">
+                <div class="inner">
+
+                    <h2>아침 식단</h2>
+                    <p>아침 식단을 업로드했습니다.</p>
+                    <ul class="actions">
+                        <li> <form action = "http://localhost:5000/fileUpload" method = "POST"
+                                   enctype = "multipart/form-data">
+                            <input type = "file" name="file" id ="file" onchange="previewImage(this,'View_area')" />
+                            <input type = "submit"/>
+                        </form>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+               <a class="image">
+                <div id='View_area'></div>
+
+                </a>
+              <div class="content">
+                <div class="inner">
+
+                    <h2>점심 식단</h2>
+                    <p>점심 식단을 업로드해주세요. 영양소가 균형잡힌 음식들을 추천 받을 수 있어요.</p>
+                    <ul class="actions">
+                        <li> <form action = "http://localhost:5000/fileUpload" method = "POST"
+                                   enctype = "multipart/form-data">
+                            <input type = "file" name="file" id ="file" onchange="previewImage(this,'View_area')" />
+                            <input type = "submit"/>
+                        </form>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <a class="image">
+                <div id='View_area'></div>
+
+                </a>
+              <div class="content">
+                <div class="inner">
+
+                    <h2>저녁 식단</h2>
+                    <p>저녁 식단을 업로드해주세요. 내일 아침메뉴를 추천 받을 수 있어요.</p>
+                    <ul class="actions">
+                        <li> <form action = "http://localhost:5000/fileUpload" method = "POST"
+                                   enctype = "multipart/form-data">
+                            <input type = "file" name="file" id ="file" onchange="previewImage(this,'View_area')" />
+
+                            <input type = "submit"/>
+                        </form>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper style3 fade-up">
+        <div class="inner">
+            <h2>메뉴 추천 page</h2>
+            <p>{{  val_textt }}이 부족하네요. <br>{{ val_textt }} 영양소를 대체할 수 있는 음식들을 추천해드릴게요.</p>
+            <div class="features">
+                <section>
+                    <span class="icon solid major fa-code"></span>
+                    <h3>{{ name1 }}</h3>
+                    <img src= "{{ sy1 }}", width="340" height="390" )/>
+                    <p>more</p>
+                </section>
+                <section>
+                    <span class="icon solid major fa-lock"></span>
+                   <h3>{{ name2 }}</h3>
+                    <img src= "{{ sy2 }}", width="340" height="390" )/>
+                    <p>more</p>
+                </section>
+                <section>
+                    <span class="icon solid major fa-cog"></span>
+                     <h3>{{ name3 }}</h3>
+                    <img src= "{{ sy3 }}", width="340" height="390" )/>
+                    <p>more</p>
+                </section>
+                <section>
+                    <span class="icon solid major fa-desktop"></span>
+                     <h3>{{ name4 }}</h3>
+                    <img src= "{{ sy4 }}", width="340" height="390" )/>
+                    <p>more</p>
+                </section>
+                <section>
+                    <span class="icon solid major fa-link"></span>
+                     <h3>{{ name5 }}</h3>
+                    <img src= "{{ sy5 }}", width="340" height="390" )/>
+                    <p>more</p>
+                </section>
+
+            </div>
+            <ul class="actions">
+                <li><a href="generic.html" class="button">Learn more</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper style1 fade-up">
+        <div class="inner">
+            <h2>Get in touch</h2>
+            <p>강성빈 김나연 이소현 전선영 조규영</p>
+            <div class="split style1">
+                <section>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field half">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="field half">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><a href="" class="button submit">Send Message</a></li>
+                        </ul>
+                    </form>
+                </section>
+                <section>
+                    <ul class="contact">
+                        <li>
+                            <h3>8조</h3>
+                            <span>데이터 청년인재<br />
+											균형잡힌 식습관을 위한 영양 분석 추천 시스템<br />
+											</span>
+                        </li>
+                        <li>
+                            <h3>Email</h3>
+                            <a href="#">user@untitled.tld</a>
+                        </li>
+                        <li>
+                            <h3>Phone</h3>
+                            <span>(000) 000-0000</span>
+                        </li>
+                        <li>
+                            <h3>Social</h3>
+                            <ul class="icons">
+                                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer" class="wrapper style1-alt">
+    <div class="inner">
+        <ul class="menu">
+            <li></li><li>Design: <a href="#">8조</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="../static/assets/js/jquery.min.js"></script>
+<script src="../static/assets/js/jquery.scrollex.min.js"></script>
+<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+<script src="../static/assets/js/browser.min.js"></script>
+<script src="../static/assets/js/breakpoints.min.js"></script>
+<script src="../static/assets/js/util.js"></script>
+<script src="../static/assets/js/main.js"></script>
+<script>
+    function previewImage(targetObj, View_area) {
+        var preview = document.getElementById(View_area); //div id
+        var ua = window.navigator.userAgent;
+
+        //ie일때(IE8 이하에서만 작동)
+        if (ua.indexOf("MSIE") > -1) {
+            targetObj.select();
+            try {
+                var src = document.selection.createRange().text; // get file full path(IE9, IE10에서 사용 불가)
+                var ie_preview_error = document.getElementById("ie_preview_error_" + View_area);
+
+
+                if (ie_preview_error) {
+                    preview.removeChild(ie_preview_error); //error가 있으면 delete
+                }
+
+                var img = document.getElementById(View_area); //이미지가 뿌려질 곳
+
+                //이미지 로딩, sizingMethod는 div에 맞춰서 사이즈를 자동조절 하는 역할
+                img.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+src+"', sizingMethod='scale')";
+            } catch (e) {
+                if (!document.getElementById("ie_preview_error_" + View_area)) {
+                    var info = document.createElement("<p>");
+                    info.id = "ie_preview_error_" + View_area;
+                    info.innerHTML = e.name;
+                    preview.insertBefore(info, null);
+                }
+            }
+            //ie가 아닐때(크롬, 사파리, FF)
+        } else {
+            var files = targetObj.files;
+            for ( var i = 0; i < files.length; i++) {
+                var file = files[i];
+                var imageType = /image.*/; //이미지 파일일경우만.. 뿌려준다.
+                if (!file.type.match(imageType))
+                    continue;
+
+                var img = document.createElement("img");
+                img.id = "prev_" + View_area;
+                img.classList.add("obj");
+                img.file = file;
+                img.style.width = '349px';
+                img.style.height = '390px';
+                preview.appendChild(img);
+                if (window.FileReader) { // FireFox, Chrome, Opera 확인.
+                    var reader = new FileReader();
+                    reader.onloadend = (function(aImg) {
+                        return function(e) {
+                            aImg.src = e.target.result;
+                        };
+                    })(img);
+                    reader.readAsDataURL(file);
+                } else { // safari is not supported FileReader
+                    //alert('not supported FileReader');
+                    if (!document.getElementById("sfr_preview_error_"
+                        + View_area)) {
+                        var info = document.createElement("p");
+                        info.id = "sfr_preview_error_" + View_area;
+                        info.innerHTML = "not supported FileReader";
+                        preview.insertBefore(info, null);
+                    }
+                }
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
