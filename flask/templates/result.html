@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <div class="result_user">{{ result_user }}</div>
+	{% extends "base.html" %}
+	{% block content %}
+	{% if session['logged_in'] %}
+		<p>이미 로그인하셨습니다.</p>
+	{% else %}
+	<center><div>
+		<h2>닉네임/이름을 설정해주세요.</h2>
+		<form action="/result_data" method="POST">
+		  <input type="text" name="result_name" placeholder="사용하고 싶은 별명을 입력해주세요.">
+
+		  <br><br>
+		  <input type="submit" value="다음">
+		</form>
+	</div></center>
+	{% endif %}
+	{% endblock %}
+</html>

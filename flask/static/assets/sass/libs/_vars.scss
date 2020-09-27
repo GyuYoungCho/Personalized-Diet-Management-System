@@ -1,0 +1,49 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000,
+		max-features:		20,
+		max-sidebar-links:	20
+	);
+
+// Duration.
+	$duration: (
+		transition:			0.2s,
+		activation:			1s
+	);
+
+// Size.
+	$size: (
+		border-radius:		0.25em,
+		border-width:		1px,
+		element-height:		2.75em,
+		element-margin:		2em,
+		sidebar-width:		18em,
+		sidebar-height:		3.5em,	// when <=large is active
+		inner-width:		75em
+	);
+
+// Font.
+	$font: (
+		family:				(Arial, Helvetica, sans-serif),
+		family-fixed:		('Courier New', monospace),
+		weight:				normal,
+		weight-bold:		bold,
+		kerning-alt:		0.25em
+	);
+
+// Palette.
+	$palette: (
+		bg:					RED,
+		bg-alt:				BLUE,
+		fg:					GREEN,
+		fg-bold:			ORANGE,
+		fg-light:			YELLOW,
+		border:				BLACK,
+		border-bg:			RED,
+		accent1:			BLUE,
+		accent1-alt:		GREEN,
+		accent2:			ORANGE,
+		accent2-alt:		YELLOW,
+		accent3:			BLACK,
+		accent3-alt:		PINK
+	);

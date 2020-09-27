@@ -13,8 +13,15 @@
 		  <input type="password" name="password" placeholder="비밀번호를 입력해주세요"><br>
 		  <input type="email" name="email" placeholder="email@naver.com"><br>
 		  <input type="age" name="age" placeholder="나이를 입력해주세요"><br>
-		  <input type="sex" name="sex" placeholder="성별을 입력해주세요"><br>
-		  <input type="act" name="act" placeholder="활동량을 입력해주세요">
+		  <label>성별 :</label><select name="sex" class="selectpicker form-control">
+                        <option value="남">남</option>
+                        <option value="여">여</option>
+                    </select>
+		  <label>활동량 :</label><select name="act" class="selectpicker form-control">
+                        <option value="많음">많음</option>
+                        <option value="보통">보통</option>
+                        <option value="적음">보통</option>
+                    </select>
             <br><br>
 		  <input type="submit" value="회원가입">
 		</form>

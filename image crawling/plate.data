@@ -1,6 +1,0 @@
-classes= 3
-train  = custom_data/traindir.txt
-valid  =custom_data/testdir.txt
-names = custom_data/custom.names
-backup = backup/
-

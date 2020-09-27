@@ -7,33 +7,55 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:identifier.sqlite</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="sytest" uuid="147ebed5-3f66-4dd0-b605-93ee3e149240">
+    <data-source source="LOCAL" name="basic" uuid="336d4027-6688-478a-95a0-e46689e19a84">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\flaskup\sytest.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\upupl\flask_project\flask\basic.db</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.31.1/sqlite-jdbc-3.31.1.jar</url>
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="site" uuid="1cea8278-0f06-4e28-8394-871373f3bb22">
+    <data-source source="LOCAL" name="sytest" uuid="3f4e2457-370e-478a-acc8-22e724153aa2">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\flaskup\site.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\flask1\sytest.db</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.31.1/sqlite-jdbc-3.31.1.jar</url>
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="loginDB" uuid="5eba2fad-d019-43b9-8bf0-07fb4ebe16fa">
+    <data-source source="LOCAL" name="food_label" uuid="38968328-c377-493e-ac66-ac900645ce3d">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\flaskup\loginDB.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\flask1\food_label.db</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.31.1/sqlite-jdbc-3.31.1.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="promote" uuid="7cc1a105-6eef-4f94-b877-b9ac680cd0fd">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\flask1\promote.db</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.31.1/sqlite-jdbc-3.31.1.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="loginDB" uuid="192270df-88b6-4d66-aaae-8a6f216146d2">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\flask1\loginDB.db</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.31.1/sqlite-jdbc-3.31.1.jar</url>
