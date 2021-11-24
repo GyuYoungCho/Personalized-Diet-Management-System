@@ -36,7 +36,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 음식 추천 페이지
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="700" alt="플라스크_1" src="https://user-images.githubusercontent.com/49351511/91731825-39f38280-eb5c-11ea-9eb8-abd05c022e15.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="700" alt="플라스크_1" src="https://user-images.githubusercontent.com/49333349/143263354-16fe9ed4-5fe9-4897-9a5a-943746361a7c.png">
 
 
 
